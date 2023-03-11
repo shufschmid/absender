@@ -29,9 +29,9 @@ const handler = async (event) => {
     context.fillStyle = "#000";
     // 600 is the x value (the center of the image)
     // 170 is the y (the top of the line of text)
-    context.fillText(liter, 60, 240);
+    context.fillText(liter, 80, 240);
 
-    context.font = "bold 32pt 'PT Sans";
+    context.font = "bold 30pt 'PT Sans";
     context.textAlign = "left";
     context.fillText("Buttenmost", 160, 50);
     context.fillText("aus Hochwald", 160, 82);
@@ -44,11 +44,11 @@ const handler = async (event) => {
 
     context.fillText("www.buttenmost.ch", 160, 240);
     
-    /* const image = await loadImage("./assets/rosehip.png").then((image) => {
+     const image = await loadImage("./assets/rosehip.png").then((image) => {
       const { w, h, x, y } = imagePosition;
       context.drawImage(image, x, y, w, h);
 
-    }); */
+    }); 
 
     const buffer = await canvas.toBuffer("image/png");
     return {
