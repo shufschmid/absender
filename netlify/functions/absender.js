@@ -44,7 +44,7 @@ const handler = async (event) => {
 
     context.fillText("www.buttenmost.ch", 160, 240);
     
-     const image = await loadImage("./assets/rosehip.png").then((image) => {
+     const image = await loadImage("https://raw.githubusercontent.com/shufschmid/absender/master/assets/rosehip.png").then((image) => {
       const { w, h, x, y } = imagePosition;
       context.drawImage(image, x, y, w, h);
 
