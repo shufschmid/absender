@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "canvas": "^2.6.1",
+    "canvas": "2.6.1",
     "netlify-cli": "^12.12.0"
   }
 }
