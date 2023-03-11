@@ -1,4 +1,8 @@
 const { createCanvas, loadImage } = require("canvas");
+//wichtig:
+//add the following environment variables to netlify deploy settings (not to the .env file)
+//LD_LIBRARY_PATH to /var/task/node_modules/canvas/build/Release
+//hier: https://answers.netlify.com/t/node-canvas-error-libuuid-so-1-cannot-open-shared-object-file-no-such-file-or-directory/30179/33 
 // Docs on event and context https://www.netlify.com/docs/functions/#the-handler-method
 const handler = async (event) => {
   try {
